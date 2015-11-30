@@ -31,6 +31,6 @@ module.exports = {
       // }
     });
 
-    return mergeTrees([vulcanized, tree]);
+    return mergeTrees([vulcanized, tree], { overwrite: true });
   }
 };

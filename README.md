@@ -8,7 +8,6 @@ This addon takes care of compiling all components into one file (using Polymer's
 
 ~~~sh
 ember install ember-webcomponents
-ember generate ember-webcomponents
 ~~~
 
 ## Usage

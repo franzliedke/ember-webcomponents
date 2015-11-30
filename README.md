@@ -1,37 +1,34 @@
-ember-polymer
-=============
+# ember-webcomponents
+
+Easily load and use web components in your Ember project.
+
+This addon takes care of compiling all components into one file (using Polymer's [vulcanize](https://github.com/Polymer/vulcanize)).
 
 ## Installation
-`ember generate ember-polymer`
+
+~~~sh
+ember install ember-webcomponents
+ember generate ember-webcomponents
+~~~
 
 ## Usage
 
-Create app/elements.html and load all polymer elements inside of it:
+Create app/webcomponents.html and import all your web components inside of it:
 
-````html
+~~~html
 <!--
-This file belongs at app/elements.html. Loads the polymer elements as a single file, rather than a bunch of individual link requests.
+This file belongs at app/webcomponents.html. It will load all your web components as a single file, rather than a bunch of individual link requests.
 
-You can customize the elements loaded here if you don't need certain things or want to add your own custom elements.
+You can customize the components loaded here if you don't need certain things or want to add your own custom elements.
 -->
 
-<link rel="import" href="../bower_components/font-roboto/roboto.html">
-<link rel="import" href="../bower_components/core-header-panel/core-header-panel.html">
-<link rel="import" href="../bower_components/core-toolbar/core-toolbar.html">
-<link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
-
-<!-- local custom polymer component -->
-<link rel="import" href="post-card.html">
-
-````
-
-## Example
-See [ember-polymer-example](https://github.com/inigo-llc/ember-polymer-example)
+<link rel="import" href="../bower_components/my-elements/my-element.html">
+~~~
 
 ## Contributing
 
-* `git clone https://github.com/inigo-llc/ember-polymer.git`
-* `cd ember-polymer`
+* `git clone https://github.com/franzliedke/ember-webcomponents.git`
+* `cd ember-webcomponents`
 * `npm install`
 * `bower install`
 * ...
@@ -50,4 +47,6 @@ See [ember-polymer-example](https://github.com/inigo-llc/ember-polymer-example)
 
 * `ember build`
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+## Acknowledgments
+
+Thanks to https://github.com/wildland/ember-polymer for the original version of this addon, which was targeted at Polymer elements and older versions of Ember CLI.

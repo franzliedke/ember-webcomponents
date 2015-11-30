@@ -1,6 +1,6 @@
 {
   "name": "ember-webcomponents",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Import web components into your Ember.app",
   "directories": {
     "doc": "doc",

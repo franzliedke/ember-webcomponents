@@ -26,7 +26,6 @@
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.1.2",
-    "broccoli-vulcanize": "git+ssh://git@github.com/franzliedke/broccoli-vulcanize.git",
     "ember-cli": "1.13.8",
     "ember-cli-app-version": "0.5.0",
     "ember-cli-content-security-policy": "0.4.0",
@@ -50,6 +49,7 @@
     "webcomponents"
   ],
   "dependencies": {
+    "broccoli-vulcanize": "git+ssh://git@github.com/franzliedke/broccoli-vulcanize.git",
     "broccoli-merge-trees": "^1.0.0",
     "ember-cli-babel": "^5.1.3"
   },

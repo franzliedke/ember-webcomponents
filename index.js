@@ -2,6 +2,7 @@
 'use strict';
 
 var vulcanize = require('broccoli-vulcanize');
+var mergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
   name: 'ember-webcomponents',
@@ -30,6 +31,6 @@ module.exports = {
       // }
     });
 
-    return this.mergeTrees([vulcanized, tree]);
+    return mergeTrees([vulcanized, tree]);
   }
 };

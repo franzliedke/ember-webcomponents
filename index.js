@@ -21,9 +21,9 @@ module.exports = {
     var vulcanized = vulcanize('app', {
       input: 'webcomponents.html',
       output: '/assets/vulcanized.html',
-      csp: true,
-      inline: true,
-      strip: false,
+      inlineScripts: true,
+      inlineCss: true,
+      stripComments: false,
       // excludes: {
       //   imports: ["(^data:)|(^http[s]?:)|(^\/)"],
       //   scripts: ["(^data:)|(^http[s]?:)|(^\/)"],

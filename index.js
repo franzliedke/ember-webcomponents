@@ -10,7 +10,7 @@ module.exports = {
   included: function(app, parentAddon) {
     this._super.included(app);
 
-    app.import(app.bowerDirectory + '/webcomponentsjs/webcomponents.js');
+    app.import(app.bowerDirectory + '/webcomponentsjs/webcomponents-lite.js');
   },
 
   postprocessTree: function(type, tree) {
